@@ -12,7 +12,6 @@ While this isn't a necessary step, if you plan on doing anything more than a tin
 ```
 git remote add upstream https://github.com/God-eye/secAI.git
 ``` 
-("meshery" is used as the example repo. Be sure to reference the _actual_ repo you're contributing to e.g. "meshery-linkerd").
 
 ## Verify the new remote named 'upstream'
 ```
@@ -76,6 +75,43 @@ git fetch upstream
 git checkout master
 git merge upstream/main
 ```
+## <a name="commit-signing">Signing-off on Commits (Developer Certificate of Origin)</a>
+
+To contribute to this project, you must agree to the Developer Certificate of
+Origin (DCO) for each commit you make. The DCO is a simple statement that you,
+as a contributor, have the legal right to make the contribution.
+
+See the [DCO](https://developercertificate.org) file for the full text of what you must agree to
+and how it works [here](https://github.com/probot/dco#how-it-works).
+To signify that you agree to the DCO for contributions, you simply add a line to each of your
+git commit messages:
+
+```
+Signed-off-by: Jane Smith <jane.smith@example.com>
+```
+
+In most cases, you can add this signoff to your commit automatically with the
+`-s` or `--signoff` flag to `git commit`. You must use your real name and a reachable email
+address (sorry, no pseudonyms or anonymous contributions). An example of signing off on a commit:
+
+```
+$ commit -s -m “my commit message w/signoff”
+```
+
+To ensure all your commits are signed, you may choose to add this alias to your global `.gitconfig`:
+
+_~/.gitconfig_
+
+```
+[alias]
+  amend = commit -s --amend
+  cm = commit -s -m
+  commit = commit -s
+```
+
+Or you may configure your IDE, for example, Visual Studio Code to automatically sign-off commits for you:
+
+<a href="https://user-images.githubusercontent.com/7570704/64490167-98906400-d25a-11e9-8b8a-5f465b854d49.png" ><img src="https://user-images.githubusercontent.com/7570704/64490167-98906400-d25a-11e9-8b8a-5f465b854d49.png" width="50%"><a>
 
 ## If there were any new commits, rebase your development branch
 ```
