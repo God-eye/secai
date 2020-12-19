@@ -9,10 +9,6 @@ on:
   release:
     types:
       - created
-        
-defaults:
-  run:
-    working-directory: dev
 
 jobs:
 
@@ -35,11 +31,14 @@ jobs:
           
       # check pwd
       - run: pwd
+        working-directory: dev
         # Install all dependencies
       - run: npm install
+        working-directory: dev
       
       # This triggers `react build` script in "package.json"
       - run: npm run build
+        working-directory: dev
         env:
          CI: false
 
@@ -72,11 +71,14 @@ jobs:
 
             # check pwd
       - run: pwd
+        working-directory: dev
         # Install all dependencies
       - run: npm install
+        working-directory: dev
       
       # This triggers `react build` script in "package.json"
       - run: npm run build
+        working-directory: dev
         env:
          CI: false
 
@@ -110,11 +112,14 @@ jobs:
           
           # check pwd
       - run: pwd
+        working-directory: dev
         # Install all dependencies
       - run: npm install
+        working-directory: dev
       
       # This triggers `react build` script in "package.json"
       - run: npm run build
+        working-directory: dev
         env:
          CI: false
 
