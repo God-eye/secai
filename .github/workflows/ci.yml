@@ -38,8 +38,10 @@ jobs:
         # Install all dependencies
       - run: npm install
       
-      # This triggers `gatsby build` script in "package.json"
-      - run: CI=npm run build
+      # This triggers `react build` script in "package.json"
+      - run: npm run build
+        env:
+         CI: false
 
       - name: Deploy draft to Netlify on PR
         uses: South-Paw/action-netlify-deploy@v1.0.4
@@ -73,8 +75,10 @@ jobs:
         # Install all dependencies
       - run: npm install
       
-      # This triggers `gatsby build` script in "package.json"
-      - run: CI=npm run build
+      # This triggers `react build` script in "package.json"
+      - run: npm run build
+        env:
+         CI: false
 
       - name: Deploy draft to Netlify on push
         uses: South-Paw/action-netlify-deploy@v1.0.4
@@ -109,8 +113,10 @@ jobs:
         # Install all dependencies
       - run: npm install
       
-      # This triggers `gatsby build` script in "package.json"
-      - run: CI=npm run build
+      # This triggers `react build` script in "package.json"
+      - run: npm run build
+        env:
+         CI: false
 
       - name: Deploy production to Netlify
         uses: South-Paw/action-netlify-deploy@v1.0.4
