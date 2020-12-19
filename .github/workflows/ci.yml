@@ -9,6 +9,10 @@ on:
   release:
     types:
       - created
+        
+defaults:
+  run:
+    working-directory: web
 
 jobs:
 
@@ -41,7 +45,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          build-dir: './public'
+          build-dir: './build'
           draft: true
           comment-on-pull-request: true
     
@@ -74,7 +78,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          build-dir: './public'
+          build-dir: './build'
           draft: true
           comment-on-commit: true
 
@@ -108,5 +112,5 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          build-dir: './public'
+          build-dir: './build'
           
