@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import BannerHeader from "./components/BannerHeader";
 import BannerAbout from './components/BannerAbout';
 import Services from "./components/Services";
@@ -14,7 +13,7 @@ import Footer from './components/Footer';
 
 export const Home = () => (
   <div className="body_wrapper">
-    <Navbar mainlogo="earth-logo.png" stickylogo="earth-logo.png"/>
+    {/* <Navbar mainlogo="earth-logo.png" stickylogo="earth-logo.png"/> */}
     <BannerHeader/>
     <BannerAbout/>
     <UserGuide />
