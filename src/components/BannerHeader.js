@@ -29,7 +29,7 @@ function BannerHeader() {
     );
     return (
         <section id="home">
-            <WaterWave interactive={false} strength={0} className="banner_area banner_shap_two"
+            <WaterWave interactive={true} strength={100} dropRadius = {25} resolution = {128} perturbance = {0.02} className="banner_area banner_shap_two"
                        style={{width: '100%', height: '100%', backgroundSize: 'cover'}}
                        imageUrl={require("../image/secai-greenblack.png")}>
                 {() => (
@@ -39,7 +39,7 @@ function BannerHeader() {
                                 <h2 className="wow fadeInLeft animated">SECAI</h2>
                             </Reveal>
                             <Reveal effect="fadeInUp" duration={2200}>
-                                <h4 className="wow fadeInUp anoimated cursor">{name} &zwnj;</h4>
+                                <h4 className="wow fadeInUp animated cursor">{name} &zwnj;</h4>
                             </Reveal>
                         </div>
                     </div>
