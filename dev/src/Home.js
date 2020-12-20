@@ -7,14 +7,14 @@ import Demo from './components/Demo';
 import Skills from './components/Skills';
 import Testimonials from './components/Testimonials';
 // import Clients from './components/Clients';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import UserGuide from './components/UserGuide';
 
 import Footer from './components/Footer';
 
 export const Home = () => (
   <div className="body_wrapper">
-    <Navbar mainlogo="logo-blue.png" stickylogo="logo-blue.png"/>
+    <Navbar mainlogo="earth-logo.png" stickylogo="earth-logo.png"/>
     <BannerHeader/>
     <BannerAbout/>
     <UserGuide />
