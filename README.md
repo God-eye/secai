@@ -10,13 +10,13 @@ Sharing proprietry code is a _tedious task_, one has to either deploy it or pack
 
 > [**SecAI**](https://github.com/God-eye/secAI) - ( _'Sekai'_ ) is a blockchain powered decentralized code sharing platform, that would ensure that a user is able to use code without worrying about how to make it work, and developers sharing their code can rest assured that their code won't be stolen or reverse engineered.
 
+[**Check our market place**](https://sec-ai.netlify.app)
 ## Roadmap
 
 - [x] Build a smart transaction based system.
-- [ ] Enable AI code sharing for tensorflow based algorithms. ( Work In Progress... )
-- [ ] Add Portis as the default authentication mechanism.
-- [ ] Add support for sharing custom AI models.
-- [ ] Enable code sharing for any code running on supported languages.
+- [x] Enable multilingual code support 
+- [x] Added a market place.
+- [ ] A library for developers to interact with and add their projects also. (Work in Progress)
 
 
   ## Technicalities
